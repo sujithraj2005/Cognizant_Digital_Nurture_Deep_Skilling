@@ -1,0 +1,52 @@
+//Java code for design pattern and principle
+//exercise 2: Implementing the factory method pattern
+
+interface Shape {
+    void draw();
+}
+
+class Circle implements Shape {
+
+    public void draw() {
+        System.out.println("Drawing Circle");
+    }
+}
+
+class Rectangle implements Shape {
+
+    public void draw() {
+        System.out.println("drawing rectangle");
+    }
+
+}
+
+class ShapeFactory {
+
+    public Shape getShape(String s) {
+
+        if (s==null)
+            return null;
+
+        if (s.equalsIgnoreCase("circle"))
+            return new Circle();
+
+        if (s.equalsIgnoreCase("rectangle"))
+            return new Rectangle();
+
+        return null;
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        ShapeFactory sf = new ShapeFactory();
+
+        Shape c = sf.getShape("circle");
+        c.draw();
+
+        Shape r = sf.getShape("rectangle");
+        r.draw();
+    }
+}

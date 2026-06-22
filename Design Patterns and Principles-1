@@ -1,0 +1,33 @@
+//Java code for design pattern and principle
+// exercise 1: Implementing the singleton pattern
+
+class Singleton {
+    private static Singleton obj;
+
+    private Singleton() {}
+
+    public static Singleton getInstance() {
+
+        if (obj==null) {
+            obj= new Singleton();
+        }
+
+        return obj;
+    }
+
+    public void show() {
+        System.out.println("singleton object created");
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Singleton s1= Singleton.getInstance();
+        Singleton s2=Singleton.getInstance();
+        s1.show();
+        
+        System.out.println(s1 == s2);
+    }
+}
