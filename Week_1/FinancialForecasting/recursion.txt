@@ -1,0 +1,11 @@
+Recursion - Recursion is a programming technique in which a method calls itself to solve a 
+smaller instance of the same problem until a base condition is reached.
+
+Recurrence relation : T(n) = T(n-1) + O(1)
+Time Complexity : O(n)
+
+
+Explain how to optimize the recursive solution to avoid excessive computation.
+
+Memoization technique
+Dynamic Programming are the techniques used to avoid excessive computation in recursion.

@@ -1,0 +1,27 @@
+----------------------------------------------------------------
+
+Time Complexity Comparision
+
+
+For Linear Search
+
+Best Case : O(1)
+Average Case : O(n)
+Worst Case : O(n)
+
+For Binary Search
+
+Best Case : O(1)
+Average Case : O(log n)
+Worst Case : O(log n)
+
+----------------------------------------------------------------
+
+Discuss which algorithm is more suitable for your platform and why.
+
+
+Binary Search algorithm is more suitable for our platform. 
+As Linear Search makes us traverse across all the elements of array to find dor a particular product.
+But for Binary search we just make logrithmic iterations to find our required product.
+So for a large no of products using linear search costs us more time, As binary search is 
+efficient we use it.
